@@ -210,6 +210,9 @@ color: #404bbf;
 }
 .experience-duties-item {
 }
+.experience-icon {
+  fill:  #434455;
+}
 
 /**************  EDUCATION ***********/
 .education-container {
@@ -230,22 +233,43 @@ color: #404bbf;
 .education-department {
 }
 
+/**************  Skills ***********/
 
+.skills-container {
+    display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+}
+.skills-title {
+}
+.tech-skills {
+  
+}
+.skills-subtitle {
+}
+.skills-list {
+    display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.skills-item {
+    font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
 
-
+.footer-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #00008B;
+  }
 /*
-.Wrapper {
-  background: #ffffff;
-  display: flex;
-  flex-direction: row-reverse;
-  width: 1200px;
-  margin: 0 auto;
-}
 
-.Main-Content {
-  padding: 88px 80px 40px 80px;
-  box-sizing: border-box;
-}
 
 /* Side bar 
 .side-bar {
