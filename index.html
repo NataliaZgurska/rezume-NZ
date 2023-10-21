@@ -14,8 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -29,6 +31,7 @@
   </head>
 
   <body>
+    <!--
     <header class="header">
       <div class="conteiner header-conteiner">
         <p class="gaslo">Все буде добре</p>
@@ -47,16 +50,17 @@
           </ul>
         </address>
       </div>
-    </header>
+    </header>  -->
+
     <main>
       <!--MY-INFORMATION-->
       <div class="container my-inform">
-        <h2 class="my-inform-position subtitle">Front-End Developer</h2>
+        <h2 class="my-inform-position">Front-End Developer</h2>
         <h1 class="my-inform-name">Наталя Згурська</h1>
-        <i class="my-inform-descr">
+        <p class="my-inform-descr description">
           Прагну ідеалу, але без фанатизму: шукаю гармонію. Приймаю навколишній
           світ таким, яким він є, і (за можливості) роблю його кращим
-        </i>
+        </p>
         <img
           class="my-inform-photo"
           src="./img/sova.jpg"
@@ -71,215 +75,119 @@
             >
           </li>
           <li class="my-inform-item">
-            <a class="my-inform-link" href="tel:+380686808888"
+            <a class="my-inform-link my-link" href="tel:+380686808888"
               >+38 (068) 8608888</a
             >
           </li>
         </ul>
       </div>
       <!--MY-PROJECTS-->
-      <div class="container my-projects">
-        <h2 class="subtitle">Мої проекти:</h2>
+      <div class="container projects-container">
+        <h2 class="projects-subtitle">Мої проекти:</h2>
         <ul class="projects-list">
           <li class="projects-item">
             <a
-              class="projects-item-link"
-              href="https://nataliazgurska.github.io/goit-markup-hw-06/" target="_blank"
-              >WEB-studio</a
-            > <span class="projects-item-span">............... [ HTML5, CSS3 ]</span>
-          </li>
-          <li class="projects-item">
-            <a
-              class="projects-item-link"
-              href="https://nataliazgurska.github.io/Tutorial/" target="_blank"
-              >Animals</a
-            ><span class="projects-item-span">............... [ HTML5, CSS3 ]</span>
-          </li>
-        </ul>
-<!--
-        <ol>
-          <li class="projects-item">
-            <a
-              class="projects-item-link"
+              class="projects-item-link my-link"
               href="https://nataliazgurska.github.io/goit-markup-hw-06/"
               target="_blank"
-              >https://nataliazgurska.github.io/goit-markup-hw-06/</a
+              >WEB-studio</a
             >
-            <span class="projects-item-tech"
-              >...................... [ HTML5, CSS3 ]</span
+            <span class="item-span"
+              >......................... [ HTML5, CSS3 ]</span
             >
           </li>
           <li class="projects-item">
             <a
-              class="projects-item-link"
+              class="projects-item-link my-link"
               href="https://nataliazgurska.github.io/Tutorial/"
               target="_blank"
-              >https://nataliazgurska.github.io/Tutorial/</a
+              >Animals</a
+            ><span class="item-span"
+              >................................. [ HTML5, CSS3 ]</span
             >
-            <span class="my-projects-item-tech"
-              >.............[ HTML5, CSS3 ]
-            </span>
           </li>
-          <!--
-          <li class="projects-item">
-            <a
-              class="projects-item-link"
-              href="https://kidslike.p.goit.global/"
-              target="_blank"
-              >https://kidslike.p.goit.global/</a
+        </ul>
+        <!--[ JavaScript ]..[ React.js, Node.js ]-->
+      </div>
+
+      <!------------   Work Experience  ----------->
+      <div class="container experience-container">
+        <h2 class="experience-subtitle">Досвід роботи:</h2>
+
+        <!-- Company1 -->
+        <div class="company-container">
+          <h3 class="experience-position">
+            Сімейний помічник (Family Assistant),
+            <span class="experience-company"
+              >Благодійний Фонд "Діти Героїв"</span
             >
-            <span class="projects-item-tech"
-              >............[ JavaScript ]....... [ React.js, Node.js ]</span
-            >
-          </li> -->
-        </ol>
+          </h3>
+          <h4 class="period">Березень 2023 - дотепер</h4>
+
+          <ul class="experience-duties-list">
+            <li class="experience-duties-item description">
+              допомога родинам в вирішенні проблем
+            </li>
+            <li class="experience-duties-item description">
+              ведення бази даних
+            </li>
+            <li class="experience-duties-item description">
+              інформування родин про програми Фонду
+            </li>
+          </ul>
+        </div>
+
+        <!-- Company2 -->
+        <div class="company-container">
+          <h3 class="experience-position">
+            Провідний фахівець з соціальної роботи,
+            <span class="experience-company">Благодійний Фонд "Джойнт"</span>
+          </h3>
+          <h4 class="period">Вересень 2000 - Березень 2023</h4>
+          <ul class="experience-duties-list">
+            <li class="experience-duties-item description">
+              супервізія діяльності програми Догляд Вдома
+            </li>
+            <li class="experience-duties-item description">
+              супервізія діяльності філіалів компанії
+            </li>
+            <li class="experience-duties-item description">ведення проектів</li>
+          </ul>
+        </div>
+      </div>
+
+      <!------------   Education  ----------->
+      <div class="container education-container">
+        <h2 class="education-subtitle">Освіта:</h2>
+
+        <div class="education-institution">
+          <h3 class="education-department">Full Stack developer</h3>
+          <h3 class="education-place">Курси програмування GoIT</h3>
+          <h4 class="period">Серпень 2023 -Червень 2024</h4>
+        </div>
+
+        <div class="education-institution">
+          <h3 class="education-department">
+            Школа соціальної роботи, магістр соціальної роботи
+          </h3>
+          <h3 class="education-place">
+            Національна Академія "Києво-Могилянська Академія"
+          </h3>
+          <h4 class="period">1998 - 2000</h4>
+        </div>
+
+        <div class="education-institution">
+          <h3 class="education-department">
+            Економічна кібернетика, менеджер інформаційних технологій
+          </h3>
+          <h3 class="education-place">Жовтоводський інститут підприємництва</h3>
+          <h4 class="period">1993 - 1998</h4>
+        </div>
       </div>
     </main>
 
     <!-- Main Content --
-      <div class="Main-Content">
-        <!-- My info --
-        <div class="my-info">
-          <h2 class="my-profession">Front-End Developer</h2>
-          <h1 class="my-name">Natalia Zgurska</h1>
-          <p class="my-descr">
-            Прагну ідеалу, але без фанатизму: шукаю гармонію. Приймаю
-            навколишній світ таким, яким він є, і (за можливості) роблю його
-            кращим
-          </p>
-        </div>
-
-        <!-- My projects --
-        <div class="my-projects-container">
-          <h3 class="my-projects-title">Гарні проекти, але не мої:</h3>
-          <ol class="my-projects-list">
-            <li class="my-projects-item">
-              <a
-                class="my-projects-item-link"
-                href="https://hellen.p.goit.global/"
-                target="_blank"
-                >https://hellen.p.goit.global/</a
-              >
-              <span class="my-projects-item-tech"
-                >...................... [ HTML5, CSS3 ]</span
-              >
-            </li>
-            <li class="my-projects-item">
-              <a
-                class="my-projects-item-link"
-                href="https://cryptohub.p.goit.global/"
-                target="_blank"
-                >https://cryptohub.p.goit.global/</a
-              >
-              <span class="my-projects-item-tech"
-                >............. [ JavaScript ]</span
-              >
-            </li>
-            <li class="my-projects-item">
-              <a
-                class="my-projects-item-link"
-                href="https://kidslike.p.goit.global/"
-                target="_blank"
-                >https://kidslike.p.goit.global/</a
-              >
-              <span class="my-projects-item-tech"
-                >................... [ React.js, Node.js ]</span
-              >
-            </li>
-          </ol>
-        </div>
-
-        <!-- Work Experience --
-        <div class="experience-container">
-          <h3 class="work-experience-title">Work Experience</h3>
-          <!-- Company1 --
-          <div class="work-experience-container">
-            <h4 class="work-experience-company">
-              Front-End Developer, <span class="company-name">Freelance</span>
-            </h4>
-            <p class="w-e-period">
-              August 2023 - now <span class="separator">|</span> Country
-            </p>
-            <ul class="work-experience-duties-list">
-              <li class="work-experience-duties-items">
-                проходження онлайн-марафону GoIT
-              </li>
-              <li class="work-experience-duties-items">
-                створення першої веб-сторінки
-              </li>
-              <li class="work-experience-duties-items">
-                створення красивого резюме
-              </li>
-            </ul>
-          </div>
-          <!-- Company2 --
-          <div class="work-experience-container">
-            <h4 class="work-experience-company">
-              Family Assistant,
-              <span class="company-name"
-                >Charitable Fund Children of Heroes</span
-              >
-            </h4>
-            <p class="w-e-period">
-              March 2023 - now <span class="separator">|</span> Country
-            </p>
-            <ul class="work-experience-duties-list">
-              <li class="work-experience-duties-items">
-                допомога родинам в вирішенні проблем
-              </li>
-              <li class="work-experience-duties-items">
-                інформування родин про програми Фонду
-              </li>
-              <li class="work-experience-duties-items">ведення бази даних</li>
-            </ul>
-          </div>
-          <!-- Company3 --
-          <div class="work-experience-container">
-            <h4 class="work-experience-company">
-              Specialist in Social Work,
-              <span class="company-name">Cheritable Fund Joint</span>
-            </h4>
-            <p class="w-e-period">
-              Septempber 2000 - March 2023
-              <span class="separator">|</span> Country
-            </p>
-            <ul class="work-experience-duties-list">
-              <li class="work-experience-duties-items">
-                супервізія діяльності програми Догляд Вдома
-              </li>
-              <li class="work-experience-duties-items">
-                супервізія діяльності філіалів компанії
-              </li>
-              <li class="work-experience-duties-items">ведення проектів</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Education --
-        <div>
-          <h3 class="education-title">Education</h3>
-          <h4 class="education-place">
-            Національна Академія "Києво-Могилянська Академія"
-            <p class="education-department">
-              Школа соціальної роботи, магістр соціальної роботи
-            </p>
-          </h4>
-          <p class="w-e-period">
-            September 1998 - June 2000 <span class="separator">|</span> Country
-          </p>
-
-          <h4 class="education-place">
-            Жовтоводський інститут підприємництва
-            <p class="education-department">
-              Економічна кібернетика, менеджер інформаційних технологій
-            </p>
-          </h4>
-          <p class="w-e-period">
-            September 1993 - June 1998 <span class="separator">|</span> Country
-          </p>
-        </div>
-      </div>
-
+      
       <!-- Sidebar 
       <aside class="side-bar">
         <img class="my-photo" src="img/sova.jpg" alt="my photo" width="370" />

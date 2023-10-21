@@ -9,6 +9,7 @@ a {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -18,21 +19,84 @@ img {
   height: auto;
 }
 body {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
   color: #434455;
-  background-color: #ffffff;
   font-weight: 400px;
+  }
+
+h1 {
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11
+letter-spacing: 0.02em;
+text-align: center;
 }
-/*font-family: 'Indie Flower', cursive;*/
+
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+ /* transform: skewX(-10deg);*/
+}
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+ .my-link {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.my-link:hover,
+.my-link:focus {
+    color: #404bbf;
+}
+
+h4 {
+font-size: 12px;
+font-weight: 400;
+line-height: 1.1;
+letter-spacing: 0.02em;
+transform: skewX(-20deg);
+}
+
+.item-span {
+font-size: 12px;
+font-weight: 500;
+line-height: 1.1;
+letter-spacing: 0.02em;
+color: #404bbf;
+}
+
+.description {
+  
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+ }
+
 
 .container {
   max-width: 320px;
+   background-color: aliceblue;
+   box-shadow: 3px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-}
-
+  }
+/****
 .header {
   display: none;
 }
@@ -76,42 +140,21 @@ body {
   color: #404bbf;
 }
 
-main {
+/*main {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   
-}
+}*/
+/*************MY INFORM *********/
 .my-inform {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  background-color: #ace2f7;
-  padding-top: 16px;
-  padding-bottom: 8px;
+  gap: 20px;
+    padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-/*.my-inform-position*/
-.subtitle {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  transform: skewX(-10deg);
-}
-.my-inform-name {
-  font-size: 36px;
-font-weight: 500;
-line-height: 1.11
-letter-spacing: 0.02em;
-text-align: center;
-}
-.my-inform-descr {
-  font-size: 12px;
-  line-height: 1.1;
-letter-spacing: 0.02em;
- 
-}
 .my-inform-photo {
   margin: 0 auto;
 }
@@ -119,41 +162,76 @@ letter-spacing: 0.02em;
 .my-inform-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
-.my-inform-item {
+.my-inform-descr {
+
 }
 
-.my-inform-link {
-    font-style: normal;
-    font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.my-inform-link:hover,
-.my-inform-link:focus {
-    color: #404bbf;
-}
 /***********   My PROJECTS *******/
-.my-projects {
-  background-color: #a5f0a1;
-padding-top: 16px;
-padding-bottom: 8px;
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+ }
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  }
+
+/**************  Work Experience ***********/
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  }
+
+.experience-subtitle {
 }
-.projects-item-span {
+.company-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.experience-company,
+.education-place {
+  font-weight: 700;
+  color: #404bbf;
+}
+.experience-period {
+  }
+.experience-duties-list {
+}
+.experience-duties-item {
+}
+
+/**************  EDUCATION ***********/
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   
 }
-.subtitle {
+.education-institution {
+   display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
-.projects-list {
+.education-place {
 }
-.projects-item {
+.education-department {
 }
-.projects-item-link {
-}
+
+
+
 
 /*
 .Wrapper {
