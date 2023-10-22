@@ -30,31 +30,10 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
-    <!--
-    <header class="header">
-      <div class="conteiner header-conteiner">
-        <p class="gaslo">Все буде добре</p>
-        <address class="header-adress">
-          <ul class="header-address-list">
-            <li class="header-address-item">
-              <a class="header-address-link" href="mailto:zgurskan@gmai.com"
-                >zgurskan@gmail.com</a
-              >
-            </li>
-            <li class="header-address-item">
-              <a class="header-address-link" href="tel:+380686808888"
-                >+38 (068) 8608888</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>  -->
-
-    <main>
+  <body class="body-container">
+    <main class="main-container">
       <!--MY-INFORMATION-->
-      <div class="container my-inform">
+      <div class="my-inform">
         <h2 class="my-inform-position">Front-End Developer</h2>
         <h1 class="my-inform-name">Наталя Згурська</h1>
         <p class="my-inform-descr description">
@@ -67,22 +46,32 @@
           alt="photo"
           width="260"
         />
-
-        <ul class="my-inform-list">
-          <li class="my-inform-item">
-            <a class="my-inform-link" href="mailto:zgurskan@gmai.com"
+      </div>
+      <!--MY-CONTACTS-->
+      <div class="my-contacts">
+        <h2 class="my-contacts-subtitle">Контакти:</h2>
+        <ul class="my-contacts-list">
+          <li class="my-contacts-item">
+            <svg class="my-contacts-icon" width="10" height="10">
+              <use href="./img/icons.svg#icon-Vector-email"></use>
+            </svg>
+            <a class="my-contacts-link my-link" href="mailto:zgurskan@gmai.com"
               >zgurskan@gmail.com</a
             >
           </li>
-          <li class="my-inform-item">
-            <a class="my-inform-link my-link" href="tel:+380686808888"
+          <li class="my-contacts-item">
+            <svg class="my-inform-icon" width="10" height="10">
+              <use href="./img/icons.svg#icon-Vector-phone"></use>
+            </svg>
+            <a class="my-contacts-link my-link" href="tel:+380686808888"
               >+38 (068) 8608888</a
             >
           </li>
         </ul>
       </div>
+
       <!--MY-PROJECTS-->
-      <div class="container projects-container">
+      <div class="projects-container">
         <h2 class="projects-subtitle">Мої проекти:</h2>
         <ul class="projects-list">
           <li class="projects-item">
@@ -111,205 +100,235 @@
       </div>
 
       <!------------   Work Experience  ----------->
-      <div class="container experience-container">
+      <div class="experience-container">
         <h2 class="experience-subtitle">Досвід роботи:</h2>
+        <div class="companies-wrap">
+          <!-- Company1 -->
+          <div class="company-container">
+            <h3 class="experience-position">
+              Сімейний помічник (Family Assistant),
+              <span class="experience-company"
+                >Благодійний Фонд "Діти Героїв"</span
+              >
+            </h3>
+            <h4 class="period">Березень 2023 - нині</h4>
 
-        <!-- Company1 -->
-        <div class="company-container">
-          <h3 class="experience-position">
-            Сімейний помічник (Family Assistant),
-            <span class="experience-company"
-              >Благодійний Фонд "Діти Героїв"</span
-            >
-          </h3>
-          <h4 class="period">Березень 2023 - нині</h4>
+            <ul class="experience-duties-list">
+              <li class="experience-duties-item description">
+                <svg class="experience-icon" width="8" height="8">
+                  <use href="./img/icons.svg#icon-checkmark"></use>
+                </svg>
+                допомога родинам в вирішенні проблем;
+              </li>
+              <li class="experience-duties-item description">
+                <svg class="experience-icon" width="8" height="8">
+                  <use href="./img/icons.svg#icon-checkmark"></use>
+                </svg>
+                ведення бази даних;
+              </li>
+              <li class="experience-duties-item description">
+                <svg class="experience-icon" width="8" height="8">
+                  <use href="./img/icons.svg#icon-checkmark"></use>
+                </svg>
+                інформування родин про програми Фонду.
+              </li>
+            </ul>
+          </div>
 
-          <ul class="experience-duties-list">
-            <li class="experience-duties-item description">
-              <svg class="experience-icon" width="8" height="8">
-                <use href="./img/icons.svg#icon-checkmark"></use>
-              </svg>
-              допомога родинам в вирішенні проблем;
-            </li>
-            <li class="experience-duties-item description">
-              <svg class="experience-icon" width="8" height="8">
-                <use href="./img/icons.svg#icon-checkmark"></use>
-              </svg>
-              ведення бази даних;
-            </li>
-            <li class="experience-duties-item description">
-              <svg class="experience-icon" width="8" height="8">
-                <use href="./img/icons.svg#icon-checkmark"></use>
-              </svg>
-              інформування родин про програми Фонду.
-            </li>
-          </ul>
-        </div>
-
-        <!-- Company2 -->
-        <div class="company-container">
-          <h3 class="experience-position">
-            Провідний фахівець з соціальної роботи,
-            <span class="experience-company">Благодійний Фонд "Джойнт"</span>
-          </h3>
-          <h4 class="period">Вересень 2000 - Березень 2023</h4>
-          <ul class="experience-duties-list">
-            <li class="experience-duties-item description">
-              <svg class="experience-icon" width="8" height="8">
-                <use href="./img/icons.svg#icon-checkmark"></use>
-              </svg>
-              супервізія діяльності програми Догляд Вдома;
-            </li>
-            <li class="experience-duties-item description">
-              <svg class="experience-icon" width="8" height="8">
-                <use href="./img/icons.svg#icon-checkmark"></use>
-              </svg>
-              супервізія діяльності філіалів компанії;
-            </li>
-            <li class="experience-duties-item description">
-              <svg class="experience-icon" width="8" height="8">
-                <use href="./img/icons.svg#icon-checkmark"></use>
-              </svg>
-              ведення проектів
-            </li>
-          </ul>
+          <!-- Company2 -->
+          <div class="company-container">
+            <h3 class="experience-position">
+              Провідний фахівець з соціальної роботи,
+              <span class="experience-company">Благодійний Фонд "Джойнт"</span>
+            </h3>
+            <h4 class="period">Вересень 2000 - Березень 2023</h4>
+            <ul class="experience-duties-list">
+              <li class="experience-duties-item description">
+                <svg class="experience-icon" width="8" height="8">
+                  <use href="./img/icons.svg#icon-checkmark"></use>
+                </svg>
+                супервізія програми Догляд Вдома;
+              </li>
+              <li class="experience-duties-item description">
+                <svg class="experience-icon" width="8" height="8">
+                  <use href="./img/icons.svg#icon-checkmark"></use>
+                </svg>
+                супервізія діяльності філіалів компанії;
+              </li>
+              <li class="experience-duties-item description">
+                <svg class="experience-icon" width="8" height="8">
+                  <use href="./img/icons.svg#icon-checkmark"></use>
+                </svg>
+                ведення проектів
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <!------------   Education  ----------->
-      <div class="container education-container">
+      <div class="education-container">
         <h2 class="education-subtitle">Освіта:</h2>
 
-        <div class="education-institution">
-          <h3 class="education-department">
-            <svg class="experience-icon" width="12" height="12">
-              <use href="./img/icons.svg#icon-pencil"></use>
-            </svg>
-            Full Stack developer
-          </h3>
-          <h3 class="education-place">Курси програмування GoIT</h3>
-          <h4 class="period">Серпень 2023 -Червень 2024</h4>
-        </div>
+        <div class="education-wrap">
+          <div class="education-institution">
+            <h3 class="education-department">
+              <svg class="experience-icon" width="12" height="12">
+                <use href="./img/icons.svg#icon-pencil"></use>
+              </svg>
+              Full Stack developer
+            </h3>
+            <h3 class="education-place">Курси програмування GoIT</h3>
+            <h4 class="period">Серпень 2023 -Червень 2024</h4>
+          </div>
 
-        <div class="education-institution">
-          <h3 class="education-department">
-            <svg class="experience-icon" width="12" height="12">
-              <use href="./img/icons.svg#icon-pencil"></use>
-            </svg>
-            Школа соціальної роботи, магістр соціальної роботи
-          </h3>
-          <h3 class="education-place">
-            Національна Академія "Києво-Могилянська Академія"
-          </h3>
-          <h4 class="period">1998 - 2000</h4>
-        </div>
+          <div class="education-institution">
+            <h3 class="education-department">
+              <svg class="experience-icon" width="12" height="12">
+                <use href="./img/icons.svg#icon-pencil"></use>
+              </svg>
+              Школа соціальної роботи, магістр соціальної роботи
+            </h3>
+            <h3 class="education-place">
+              Національна Академія "Києво-Могилянська Академія"
+            </h3>
+            <h4 class="period">1998 - 2000</h4>
+          </div>
 
-        <div class="education-institution">
-          <h3 class="education-department">
-            <svg class="experience-icon" width="12" height="12">
-              <use href="./img/icons.svg#icon-pencil"></use>
-            </svg>
-            Економічна кібернетика, менеджер інформаційних технологій
-          </h3>
-          <h3 class="education-place">Жовтоводський інститут підприємництва</h3>
-          <h4 class="period">1993 - 1998</h4>
+          <div class="education-institution">
+            <h3 class="education-department">
+              <svg class="experience-icon" width="12" height="12">
+                <use href="./img/icons.svg#icon-pencil"></use>
+              </svg>
+              Економічна кібернетика, менеджер інформаційних технологій
+            </h3>
+            <h3 class="education-place">
+              Жовтоводський інститут підприємництва
+            </h3>
+            <h4 class="period">1993 - 1998</h4>
+          </div>
         </div>
       </div>
     </main>
 
-    <!------------   Skills  ----------->
-    <div class="container skills-container">
-      <h2 class="skills-title">Навички</h2>
-      <div class="tech-skills">
-        <h3 class="skills-subtitle">Технічні навички:</h3>
-        <ul class="skills-list">
-          <li class="skills-item">
-            <svg class="experience-icon" width="10" height="10">
-              <use href="./img/icons.svg#icon-attachment"></use>
+    <!------------   Side-bar  ----------->
+    <aside class="side-bar-container">
+      <img class="side-photo" src="./img/sova.jpg" alt="photo" width="260" />
+      <div class="side-my-contacts">
+        <h2 class="my-contacts-subtitle">Контакти:</h2>
+        <ul class="my-contacts-list">
+          <li class="my-contacts-item">
+            <svg class="my-contacts-icon" width="10" height="10">
+              <use href="./img/icons.svg#icon-Vector-email"></use>
             </svg>
-            HTML5
+            <a class="my-contacts-link my-link" href="mailto:zgurskan@gmai.com"
+              >zgurskan@gmail.com</a
+            >
           </li>
-          <li class="skills-item">
-            <svg class="experience-icon" width="10" height="10">
-              <use href="./img/icons.svg#icon-attachment"></use>
+          <li class="my-contacts-item">
+            <svg class="my-contacts-icon" width="10" height="10">
+              <use href="./img/icons.svg#icon-Vector-phone"></use>
             </svg>
-            CSS3
-          </li>
-          <li class="skills-item">
-            <svg class="experience-icon" width="10" height="10">
-              <use href="./img/icons.svg#icon-attachment"></use>
-            </svg>
-            GIT
-          </li>
-          <li class="skills-item">
-            <svg class="experience-icon" width="10" height="10">
-              <use href="./img/icons.svg#icon-attachment"></use>
-            </svg>
-            Word, Excel
+            <a class="my-contacts-link my-link" href="tel:+380686808888"
+              >+38 (068) 8608888</a
+            >
           </li>
         </ul>
       </div>
-      <div class="language-skills">
-        <h3 class="skills-subtitle">Знання мов:</h3>
-        <ul class="skills-list">
-          <li class="skills-item">
-            <svg class="experience-icon" width="10" height="10">
-              <use href="./img/icons.svg#icon-attachment"></use>
-            </svg>
-            українська: вільна
-          </li>
-          <li class="skills-item">
-            <svg class="experience-icon" width="10" height="10">
-              <use href="./img/icons.svg#icon-attachment"></use>
-            </svg>
-            російська: вільна
-          </li>
-          <li class="skills-item">
-            <svg class="experience-icon" width="10" height="10">
-              <use href="./img/icons.svg#icon-attachment"></use>
-            </svg>
-            англійська: середнє
-          </li>
-        </ul>
-      </div>
-      <div class="soft-skills">
-        <h3 class="skills-subtitle">Інші вміння:</h3>
-        <ul class="skills-list">
-          <li class="skills-item">
-            <svg class="experience-icon" width="10" height="10">
-              <use href="./img/icons.svg#icon-attachment"></use>
-            </svg>
-            ефективно працюю як самостійно, так і в команді,
-          </li>
-          <li class="skills-item">
-            <svg class="experience-icon" width="10" height="10">
-              <use href="./img/icons.svg#icon-attachment"></use>
-            </svg>
-            приділяю увагу плануванню і визначенню приоритетів,
-          </li>
-          <li class="skills-item">
-            <svg class="experience-icon" width="10" height="10">
-              <use href="./img/icons.svg#icon-attachment"></use>
-            </svg>
-            прагну досягти найкращих результатів
-          </li>
-        </ul>
-      </div>
-    </div>
 
+      <!------------   Skills  ----------->
+      <div class="skills-container">
+        <h2 class="skills-title">Навички</h2>
+        <div class="skills-wrap">
+          <div class="tech-skills">
+            <h3 class="skills-subtitle">Технічні навички:</h3>
+            <ul class="skills-list">
+              <li class="skills-item">
+                <svg class="experience-icon" width="10" height="10">
+                  <use href="./img/icons.svg#icon-attachment"></use>
+                </svg>
+                HTML5
+              </li>
+              <li class="skills-item">
+                <svg class="experience-icon" width="10" height="10">
+                  <use href="./img/icons.svg#icon-attachment"></use>
+                </svg>
+                CSS3
+              </li>
+              <li class="skills-item">
+                <svg class="experience-icon" width="10" height="10">
+                  <use href="./img/icons.svg#icon-attachment"></use>
+                </svg>
+                GIT
+              </li>
+              <li class="skills-item">
+                <svg class="experience-icon" width="10" height="10">
+                  <use href="./img/icons.svg#icon-attachment"></use>
+                </svg>
+                Word, Excel
+              </li>
+            </ul>
+          </div>
+          <div class="language-skills">
+            <h3 class="skills-subtitle">Знання мов:</h3>
+            <ul class="skills-list">
+              <li class="skills-item">
+                <svg class="experience-icon" width="10" height="10">
+                  <use href="./img/icons.svg#icon-attachment"></use>
+                </svg>
+                українська: вільна
+              </li>
+              <li class="skills-item">
+                <svg class="experience-icon" width="10" height="10">
+                  <use href="./img/icons.svg#icon-attachment"></use>
+                </svg>
+                російська: вільна
+              </li>
+              <li class="skills-item">
+                <svg class="experience-icon" width="10" height="10">
+                  <use href="./img/icons.svg#icon-attachment"></use>
+                </svg>
+                англійська: середнє
+              </li>
+            </ul>
+          </div>
+          <div class="soft-skills">
+            <h3 class="skills-subtitle">Інші вміння:</h3>
+            <ul class="skills-list">
+              <li class="skills-item">
+                <svg class="experience-icon" width="10" height="10">
+                  <use href="./img/icons.svg#icon-attachment"></use>
+                </svg>
+                ефективно працюю як самостійно, так і в команді,
+              </li>
+              <li class="skills-item">
+                <svg class="experience-icon" width="10" height="10">
+                  <use href="./img/icons.svg#icon-attachment"></use>
+                </svg>
+                приділяю увагу плануванню і визначенню приоритетів,
+              </li>
+              <li class="skills-item">
+                <svg class="experience-icon" width="10" height="10">
+                  <use href="./img/icons.svg#icon-attachment"></use>
+                </svg>
+                прагну досягти найкращих результатів
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!--
     <footer>
       <div class="container footer-container">
         <q class="footer-text">
-          Про щоб ви не мріяли - робіть. Бо в зухвалості є геній, сила і магія.
+          <i
+            >Про щоб ви не мріяли - робіть. Бо в зухвалості є геній, сила і
+            магія</i
+          >
         </q>
         <h3>Гете</h3>
       </div>
-    </footer>
-
-    <!-- Sidebar 
-      <aside class="side-bar">
-       
-          
-      </aside> -->
+    </footer> -->
   </body>
 </html>

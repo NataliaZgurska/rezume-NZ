@@ -25,11 +25,11 @@ body {
   }
 
 h1 {
-font-size: 36px;
+font-size: 34px;
 font-weight: 700;
 line-height: 1.11
 letter-spacing: 0.02em;
-text-align: center;
+/*text-align: center;*/
 }
 
 
@@ -78,15 +78,13 @@ color: #404bbf;
 }
 
 .description {
-  
-  font-size: 12px;
+    font-size: 12px;
   line-height: 1.1;
   letter-spacing: 0.02em;
  }
 
-
-.container {
-  max-width: 320px;
+.body-container {
+    max-width: 320px;
    background-color: aliceblue;
    box-shadow: 3px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -95,104 +93,71 @@ color: #404bbf;
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-  }
-/****
-.header {
-  display: none;
+}
+/********* MAIN-CONTAINER *********/
+.main-container {
+   display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+   border: 2px solid red;
 }
 
-.header-conteiner {
-  max-width: 1158px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ace2f7;
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-.gaslo {
-  font-family: "Indie Flower", cursive;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-.header-adress {
-}
-.header-address-list {
-  display: flex;
-  gap: 24px;
-}
-.header-address-item {
-}
-.header-address-link {
-  display: block;
-  font-size: 20px;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-address-link:focus,
-.header-address-link:hover {
-  color: #404bbf;
-}
-
-/*main {
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  
-}*/
-/*************MY INFORM *********/
+/************* MY INFORM *********/
 .my-inform {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-    padding-top: 16px;
-  padding-bottom: 16px;
-}
+  gap: 10px;
+  }
 
 .my-inform-photo {
   margin: 0 auto;
 }
 
-.my-inform-list {
+/********MY CONTACTS *******/
+.my-contacts {
+  
+}
+.my-contacts-subtitle {
+  margin-bottom: 10px;
+}
+.my-contacts-list {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
-.my-inform-descr {
 
+.my-contacts-icon {
+  fill: #434455;
+  margin-right: 8px;
 }
 
 /***********   My PROJECTS *******/
 .projects-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-top: 16px;
-  padding-bottom: 16px;
- }
+   }
+ .projects-subtitle {
+  margin-bottom: 10px;
+ }  
 .projects-list {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
   }
 
 /**************  Work Experience ***********/
 
 .experience-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-top: 16px;
-  padding-bottom: 16px;
   }
 
 .experience-subtitle {
+  margin-bottom: 10px;
+}
+
+.companies-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 .company-container {
   display: flex;
@@ -207,21 +172,29 @@ color: #404bbf;
 .experience-period {
   }
 .experience-duties-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .experience-duties-item {
 }
 .experience-icon {
   fill:  #434455;
+  margin-right: 8px;
 }
 
 /**************  EDUCATION ***********/
 .education-container {
+ 
+}
+.education-subtitle {
+  margin-bottom: 10px;
+}
+
+.education-wrap {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  
+  gap: 18px;
 }
 .education-institution {
    display: flex;
@@ -233,22 +206,40 @@ color: #404bbf;
 .education-department {
 }
 
+
+/************** SIDE-BAR *************/
+.side-bar-container {
+  border: 2px solid blue;
+  padding-top: 6px;
+  padding-bottom: 16px;
+}
+.side-photo {
+  display: none;
+}
+
+.side-my-contacts {
+  display: none;
+}
+
 /**************  Skills ***********/
 
 .skills-container {
-    display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  
+    
 }
+
 .skills-title {
+  margin-bottom: 10px;
+}
+.skills-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .tech-skills {
   
 }
 .skills-subtitle {
+  margin-bottom: 6px;
 }
 .skills-list {
     display: flex;
@@ -260,281 +251,75 @@ color: #404bbf;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-
-.footer-text {
+/******** FOOTER ******/
+.footer-container {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #00008B;
+  color: #45459d;
   }
-/*
 
 
-/* Side bar 
-.side-bar {
-  background: #e0ebfe;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  box-sizing: border-box;
-  width: 370px;
-}
-
-.soft-contacts {
-  padding-left: 40px;
-  padding-top: 40px;
-  padding-right: 40px;
-  box-sizing: border-box;
-}
-
-/* Contacts 
-.contacts-title {
-  color: #161d2a;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: normal;
-  margin-top: 0px;
-  margin-bottom: 8px;
-}
-
-.contacts-type {
-  color: #161d2a;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-right: 8px;
-}
-
-.contacts-link {
-  color: #2979ff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  text-decoration-line: underline;
-}
-
-.contacts-item {
-  margin-top: 0px;
-  margin-bottom: 4px;
-}
-
-.contacts-container {
-  margin-bottom: 40px;
-}
-
-/* Skills 
-.skills-container {
-  margin-bottom: 40px;
-}
-.skills-title {
-  color: #161d2a;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: normal;
-  margin-top: 0px;
-  margin-bottom: 8px;
-}
-.skills-list {
-  padding-left: 16px;
-}
-
-.skill-list-item {
-  color: #161d2a;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-/*  Main Content */
-.my-profession {
-  color: #000;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 17px;
-  margin-top: 0px;
-  margin-bottom: 8px;
-}
-
-.my-name {
-  color: #000;
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 55px;
-  margin-top: 0px;
-  margin-bottom: 12px;
-}
-
-.my-descr {
-  color: #595959;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  box-sizing: border-box;
-}
-
-.my-info {
-  margin-bottom: 40px;
-}
-/* My projects  
-.my-projects-title {
-  color: #000;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 27px;
-  margin-top: 0px;
-  margin-bottom: 8px;
-}
-
-.my-projects-list {
-  padding-left: 14px;
-}
-
-.my-projects-item {
-  color: #000;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-.my-projects-item-link {
-  color: #005fff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  text-decoration-line: underline;
-}
-
-.my-projects-item-tech {
-  color: #595959;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.my-projects-container {
-  margin-bottom: 40px;
-}
-
-/* Work Experience 
-.work-experience-title {
-  color: #000;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 27px;
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-.work-experience-company {
-  color: #000;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-.company-name {
-  color: #6d9bf5;
-}
-
-.w-e-period {
-  color: #a8a8a8;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-}
-
-.separator {
-  color: #000;
-}
-
-.work-experience-duties-list {
-  padding-left: 16px;
-}
-.work-experience-duties-items {
-  color: #595959;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.work-experience-container {
-  margin-bottom: 12px;
-}
-.experience-container {
-  margin-bottom: 40px;
-}
-
-/* Education 
-.education-title {
-  color: #000;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: normal;
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.education-place {
-  color: #6d9bf5;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.education-department {
-  color: #000;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: normal;
-}
-
-@media screen and (max-width: 960px) {
-  body {
-    padding: 20px;
+/**********************************************************/
+/*********** Media 768 **********/
+@media screen and (min-width: 768px) {
+  .body-container {
+    max-width: 768px;
+    display: flex;
+    flex-direction: row-reverse;
   }
-  .Main-Content {
-    padding: 40px;
-  }
+
+.main-container {
+  max-width: 500px;
+  padding: 32px;
+  
+}
+.my-inform-name {
+  text-align: left;
+}
+.my-inform-photo {
+  display: none;
+}
+.my-contacts {
+  display: none;
 }
 
-@media screen and (max-width: 800px) {
-  .side-bar {
-    width: 250px;
-  }
-  .my-photo {
-    width: 250px;
-  }
-  .sidebar-content {
-    padding: 20px;
-  }
+
+.side-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #ffffff;
+  background-color: #45459d;
+  padding: 32px 16px 16px 16px;
+   
+}
+.side-photo {
+  display: block;
+   margin: 0 auto;
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    padding: 0;
-  }
-  .side-bar {
-    width: 200px;
-  }
-  .my-photo {
-    width: 200px;
-  }
-  .Main-Content {
-    padding: 20px;
-  }
-  .my-name {
-    font-size: 20px;
-  }
+.side-my-contacts {
+  display: block;
+}
+.my-contacts-link {
+  color: #ffffff;
+}
+.my-contacts-link:hover,
+.my-contacts-link:focus {
+    color: yellowgreen;
 }
 
-@media screen and (max-width: 510px) {
-  .Wrapper {
-    flex-direction: column;
+.my-contacts-icon,
+.experience-icon {
+  fill: #ffffff;
+}
+
+
+.skills-wrap {
+  gap: 12px;
+}
+
   }
-  .side-bar {
-    width: 100%;
-  }
-  .my-photo {
-    width: 100%;
-  }
-}*/
+
