@@ -101,8 +101,7 @@ color: #404bbf;
   gap: 22px;
   padding-top: 16px;
   padding-bottom: 16px;
-   border: 2px solid red;
-}
+  }
 
 /************* MY INFORM *********/
 .my-inform {
@@ -209,7 +208,6 @@ color: #404bbf;
 
 /************** SIDE-BAR *************/
 .side-bar-container {
-  border: 2px solid blue;
   padding-top: 6px;
   padding-bottom: 16px;
 }
@@ -251,6 +249,10 @@ color: #404bbf;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
+.skills-icon {
+   fill:  #434455;
+  margin-right: 8px;
+}
 /******** FOOTER ******/
 .footer-container {
   font-size: 16px;
@@ -278,6 +280,9 @@ color: #404bbf;
 .my-inform-name {
   text-align: left;
 }
+.my-inform-descr {
+  max-width: 320px;
+}
 .my-inform-photo {
   display: none;
 }
@@ -285,16 +290,22 @@ color: #404bbf;
   display: none;
 }
 
-
+/********* 768-side-bar ******/
+.side-main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+  background-color: #45459d;
+  padding: 32px 16px;
+}
 .side-bar-container {
   display: flex;
   flex-direction: column;
   gap: 22px;
-  color: #ffffff;
-  background-color: #45459d;
-  padding: 32px 16px 16px 16px;
-   
+    
 }
+
 .side-photo {
   display: block;
    margin: 0 auto;
@@ -302,24 +313,55 @@ color: #404bbf;
 
 .side-my-contacts {
   display: block;
-}
-.my-contacts-link {
-  color: #ffffff;
-}
-.my-contacts-link:hover,
-.my-contacts-link:focus {
-    color: yellowgreen;
-}
+  }
 
-.my-contacts-icon,
-.experience-icon {
+ .side-contacts-subtitle {
+  margin-bottom: 10px;
+ } 
+
+  .side-contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+.side-contacts-icon,
+.skills-icon {
   fill: #ffffff;
 }
 
-
-.skills-wrap {
-  gap: 12px;
+.side-contacts-link {
+   font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.side-contacts-link:hover,
+.side-contacts-link:focus {
+    color: yellowgreen;
 }
 
+.skills-wrap {
+  gap: 14px;
+}
+
+.footer-container {
+  color: yellowgreen;
   }
 
+}
+
+
+/**********************************************************/
+/*********** Media 1158 **********/
+@media screen and (min-width: 1158px) {
+ .body-container {
+    max-width: 1158px;
+      }
+  .main-container {
+  max-width: 890px;
+  
+}
+}
