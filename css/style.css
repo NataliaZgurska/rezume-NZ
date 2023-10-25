@@ -273,8 +273,7 @@ color: #404bbf;
   }
 
 .main-container {
-  max-width: 500px;
-  padding: 32px;
+    padding: 32px;
   
 }
 .my-inform-name {
@@ -292,6 +291,7 @@ color: #404bbf;
 
 /********* 768-side-bar ******/
 .side-main-footer {
+  max-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -360,8 +360,8 @@ color: #404bbf;
  .body-container {
     max-width: 1158px;
       }
-  .main-container {
-  max-width: 890px;
-  
-}
+ .side-main-footer {
+  max-width: 320px;
+  padding: 32px;
+ }
 }
