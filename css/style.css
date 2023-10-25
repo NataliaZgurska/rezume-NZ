@@ -365,3 +365,86 @@ color: #404bbf;
   padding: 32px;
  }
 }
+/**********************************************************/
+/*********** Print **********/
+@media print and (min-width: 320px) {
+ .body-container {
+    max-width: 1158px;
+    display: flex;
+    flex-direction: row-reverse;
+      }
+
+.main-container {
+    padding: 32px;
+  
+}
+.my-inform-name {
+  text-align: left;
+}
+.my-inform-descr {
+  max-width: 320px;
+}
+.my-inform-photo {
+  display: none;
+}
+.my-contacts {
+  display: none;
+}
+
+.side-main-footer {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #434455;
+  background-color: transparent;
+  padding: 32px 16px;
+}
+.side-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+    
+}
+
+.side-photo {
+  display: block;
+   margin: 0 auto;
+}
+
+.side-my-contacts {
+  display: block;
+  }
+
+ .side-contacts-subtitle {
+  margin-bottom: 10px;
+ } 
+
+  .side-contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+.side-contacts-icon,
+.skills-icon {
+  fill: #434455;
+}
+
+.side-contacts-link {
+   font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+    }
+
+.skills-wrap {
+  gap: 14px;
+}
+
+.footer-container {
+  color: yellowgreen;
+  }
+
+ }
